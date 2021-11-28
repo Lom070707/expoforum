@@ -28,7 +28,7 @@
             </nav>
             <div class="right-bar">
                 <form class="header__form-search">
-                    <input type="search" name="search">
+                    <input autofocus type="search" name="search" class="header__search" id="search">
                     <span id="search-icon" class="header__search-icon"></span>
                 </form>
                 <div class="header__lang">
@@ -75,24 +75,24 @@
             </div>
 
         </main>
-    </div> 
+    </div>
     <section class="side-menu wrap">
         <div class="side-menu__content container color-white">
             <div class="">
                 <h2 class="h2 side-menu__title">Организаторам</h2>
-                
+
                 <ul class="side-menu__list">
                     <li class="side-menu__item"><a href="" class="text-underline">Документы организаторам </a></li>
-                    <li class="side-menu__item"><a href="">Услуги организаторам  </a></li>
+                    <li class="side-menu__item"><a href="">Услуги организаторам </a></li>
                     <li class="side-menu__item"><a href="">Выстовачные площади </a></li>
-                    <li class="side-menu__item"><a href="">Рестораны и кафе  </a></li>
-                    <li class="side-menu__item"><a href="">Конгерс-центр  </a></li>
+                    <li class="side-menu__item"><a href="">Рестораны и кафе </a></li>
+                    <li class="side-menu__item"><a href="">Конгерс-центр </a></li>
                     <li class="side-menu__item"><a href="">Спорт-центр </a></li>
                 </ul>
             </div>
             <div class="">
                 <h2 class="h2 side-menu__title">Экспонентам</h2>
-                
+
                 <ul class="side-menu__list">
                     <li class="side-menu__item"><a href="">Общие условия участия </a></li>
                     <li class="side-menu__item"><a href="">Услуги экспонентам </a></li>
@@ -103,7 +103,7 @@
             </div>
             <div class="">
                 <h2 class="h2 side-menu__title">Поситителям</h2>
-                
+
                 <ul class="side-menu__list">
                     <li class="side-menu__item"><a href="">Сервисы </a></li>
                     <li class="side-menu__item"><a href="">Онлайн-регестрация на мероприятние </a></li>
@@ -113,7 +113,7 @@
             </div>
             <div class="">
                 <h2 class="h2 side-menu__title">Прессе</h2>
-                
+
                 <ul class="side-menu__list">
                     <li class="side-menu__item"><a href="">Аккредитация </a></li>
                     <li class="side-menu__item"><a href="">Пресс-служба </a></li>
@@ -123,10 +123,66 @@
         </div>
     </section>
     <section class="events wrap">
-        <div class="container">events</div>
+        <div class="container">
+            <div class="events__head">
+                <h2 class="h2">Текущие будущие мероприятия</h2>
+                <a href="" class="link-more color-dark link-more-md">Все мероприятия</a>
+            </div>
+            <div class="events__body">
+                <div>
+                    <img src=".//images/events/elka.png" alt="" class="events__img">
+                    <span class="events__date">2 января 2020 г. – 7 января 2020 г.</span>
+                    <h3 class="h3 events__title color-red">ЭКСПО ЕЛКА</h3>
+                    <p class="events__info">Парк интерактивных развлечений</p>
+                </div>
+                <div>
+                    <img src=".//images/events/piter.png" alt="" class="events__img">
+                    <span class="events__date">5 февраля 2020 г. – 9 февраля 2020 г.</span>
+                    <h3 class="h3 events__title color-red">Junwex Петербург</h3>
+                    <p class="events__info">Выставка ювелирных изделий</p>
+                </div>
+                <div>
+                    <img src=".//images/events/larec.png" alt="" class="events__img">
+                    <span class="events__date">7 февраля 2020 г. – 9 февраля 2020 г.</span>
+                    <h3 class="h3 events__title color-red">Невский ларец</h3>
+                    <p class="events__info">Выставка-ярмарка народных художественных
+                        промыслов и ремесел</p>
+                </div>
+                <div>
+                    <img src=".//images/events/ponaehali.png" alt="" class="events__img">
+                    <span class="events__date">14 февраля 2020 г. – 23 февраля 2020 г..</span>
+                    <h3 class="h3 events__title color-red">ПОНАЕХАЛИ!</h3>
+                    <p class="events__info">Специализированная арт-ярмарка</p>
+                </div>
+                <div>
+                    <img src=".//images/events/logo.png" alt="" class="events__img">
+                    <span class="events__date">18 февраля 2020 г. – 21 февраля 2020 г.</span>
+                    <h3 class="h3 events__title color-red">VET.CAMP</h3>
+                    <p class="events__info">Конференция для ветеринарных врачей</p>
+                </div>
+                <div>
+                    <img src=".//images/events/let camp.png" alt="" class="events__img">
+                    <span class="events__date">26 февраля 2020 г. – 28 февраля 2020 г.</span>
+                    <h3 class="h3 events__title color-red">ExpoHoReCa</h3>
+                    <p class="events__info">Специализированная выставка</p>
+                </div>
+            </div>
+
+        </div>
     </section>
     <section class="news wrap">
-        <div class="container"></div>
+        <div class="container">
+            <div class="news_images">
+                <img src=".//images/news/park.jpg" alt="">
+                <img src=".//images/news/expoelka.jpg" alt="">
+            </div>
+            <div >
+                <img src=".//images/news/write.jpg" alt="">
+                <img src=".//images/news/zal.jpg" alt="">
+                <img src=".//images/news/tolpa.jpg" alt="">
+
+            </div>
+        </div>
     </section>
     <footer class="footer wrap ">
         <div class="container footer__contant color-white"></div>
