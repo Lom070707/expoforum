@@ -12,6 +12,14 @@
 </head>
 
 <body>
+    <div id="modal" class="modal wrap">
+        <form class="form-login">
+                <input type="email" name="email" placeholder="Введите ваш e-mail" class="form-login__email">
+                <input type="password" name="password" placeholder="Введите ваш пароль" class="form-login__password">
+                <button type="submit" class="form-login__button">Отправить</button> 
+                <span class="form-login__close" id="close-window"></span>
+        </form>
+    </div>
     <div class="first-screen wrap color-white">
         <header class="header">
             <div class="expo">
@@ -19,11 +27,11 @@
             </div>
             <nav>
                 <ul class="header__menu">
-                    <li><a href="#">О комплексе</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Медиа-банк</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#events">О комплексе</a></li>
+                    <li><a href="#side-menu">О компании</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#" id="order">Заказать</a></li>
+                    <li><a href="#footer">Контакты</a></li>
                 </ul>
             </nav>
             <div class="right-bar">
@@ -53,30 +61,35 @@
                         <h3 class="h3 main__tittle">Календарь <br>
                             мероприятий</h3>
                         <a href="#" class="more-info font-14 more-info-sm">Подробнее</a>
+                        <img class="link-more-sm" src="./images/first-screen/Arrow 1.png" alt="">
                     </div>
                     <div class="main__item main__item_aqua ">
                         <h3 class="h3 main__tittle">Как добраться <br>
                             до Экспофорума</h3>
                         <a href="#" class="more-info font-14 more-info-sm">Подробнее</a>
+                        <img class="link-more-sm" src="./images/first-screen/Arrow 1.png" alt="">
                     </div>
                     <div class="main__item main__item_yellow ">
                         <h3 class="h3 main__tittle">Онлайн-заявка <br>
                             на организацию <br>
                             мероприятия</h3>
                         <a href="#" class="more-info font-14 more-info-sm">Подробнее</a>
+                        <img class="link-more-sm" src="./images/first-screen/Arrow 1.png" alt="">
                     </div>
                     <div class="main__item main__item_red ">
                         <h3 class="h3 main__tittle">План <br>
                             и инфраструктура <br>
                             комплекса</h3>
                         <a href="#" class="more-info font-14 more-info-sm">Подробнее</a>
+                        <img class="link-more-sm" src="./images/first-screen/Arrow 1.png" alt="">
                     </div>
                 </div>
             </div>
 
         </main>
     </div>
-    <section class="side-menu wrap">
+    <button class="calculator" id="calculator">Calculator</button>
+    <section id="side-menu" class="side-menu wrap">
         <div class="side-menu__content container color-white">
             <div class="">
                 <h2 class="h2 side-menu__title">Организаторам</h2>
@@ -122,7 +135,7 @@
             </div>
         </div>
     </section>
-    <section class="events wrap">
+    <section id="events" class="events wrap">
         <div class="container">
             <div class="events__head">
                 <h2 class="h2">Текущие будущие мероприятия</h2>
@@ -170,23 +183,133 @@
 
         </div>
     </section>
-    <section class="news wrap">
-        <div class="container">
-            <div class="news_images">
-                <img src=".//images/news/park.jpg" alt="">
-                <img src=".//images/news/expoelka.jpg" alt="">
+    <section id="news" class="news wrap">
+        <div class="container news__main">
+            <div class="news__events">
+                <img src="./images/news/park.jpg" alt="">
+                <img src="./images/news/expoelka.jpg" alt="">
             </div>
-            <div >
-                <img src=".//images/news/write.jpg" alt="">
-                <img src=".//images/news/zal.jpg" alt="">
-                <img src=".//images/news/tolpa.jpg" alt="">
+            <div class="news__interesting">
+                <div class="news__head">
+                    <h2>Новости</h2>
+                    <a href="" class="link-more link-more-md color-dark">Все новости</a>
+                </div>
+                <div class="news__body">
+                    <div class="news__item">
+                        <div class="news__img-box"><img src="./images/news/write.jpg" alt=""></div>
+                        <div class="news__info">
+                            <span class="news__date color-red">4 января 2020 г.</span>
+                            <h3 class="h3">Как объединилась реальность и виртуальность – LIKEE PARTY</h3>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__img-box"><img src="./images/news/zal.jpg" alt=""></div>
+                        <div class="news__info">
+                            <span class="news__date color-red">2 января 2020 г.</span>
+                            <h3 class="h3">Как объединилась реальность и виртуальность – LIKEE PARTY</h3>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__img-box"><img src="./images/news/tolpa.jpg" alt=""></div>
+                        <div class="news__info">
+                            <span class="news__date color-red">2 января 2020 г.</span>
+                            <h3 class="h3">Как объединилась реальность и виртуальность – LIKEE PARTY</h3>
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </div>
+
+
     </section>
-    <footer class="footer wrap ">
-        <div class="container footer__contant color-white"></div>
+
+    <footer id="footer" class="footer wrap ">
+        <div class="container footer__content color-white">
+            <div class="footer__item">
+                <div class="footer__links">
+                    <h3 class="h3 footer__title"> О компании </h3>
+                    <ul>
+                        <li><a href="" class="text-underline">О нашей компании</a></li>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="">Партнеры</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h3 class="h3 footer__title"> Организаторам </h3>
+                    <ul>
+                        <li><a href="">Преимущества площадки</a></li>
+                        <li><a href="">Структура комплекса</a></li>
+                        <li><a href="">Онлайн-заявка на организацию</a></li>
+                        <li><a href="">Документы организаторам</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__links">
+                    <h3 class="h3 footer__title"> Экспонентам </h3>
+                    <ul>
+                        <li><a href="">Общие условия участия</a></li>
+                        <li><a href="">Услуги экспонентам</a></li>
+                        <li><a href="">Документы экспонентам</a></li>
+                        <li><a href="">Забронировать гостиницу</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h3 class="h3 footer__title"> Посетителям </h3>
+                    <ul>
+                        <li><a href="">Сервисы</a></li>
+                        <li><a href="">Онлайн-регистрация</a></li>
+                        <li><a href="">Забронировать гостиницу</a></li>
+                        <li><a href="">Центр деловых контактов</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__links">
+                    <h3 class="h3 footer__title"> Прессе </h3>
+                    <ul>
+                        <li><a href="">Аккредитация</a></li>
+                        <li><a href="">Пресс-служба</a></li>
+                        <li><a href="">Правила аккредитации</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h3 class="h3 footer__title"> Приложение </h3>
+                    <div class="footer__app">
+                        <img src="./images/footer/Frame.svg" alt="">
+                    </div class="footer__google">
+                    <div>
+                        <img src="./images/footer/Frame(1).svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__links">
+                    <h3 class="h3 footer__title"> Мы в соц. сетях </h3>
+                    <div class="footer__soc-media">
+                        <img src="./images/footer/youtube.svg" alt="">
+                        <img src="./images/footer/vk.svg" alt="">
+                        <img src="./images/footer/facebook.svg" alt="">
+                        <img src="./images/footer/instagram.png" alt="">
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h3 class="h3 footer__title"> Подписка на новости </h3>
+                    <p class="footer__info">Получайте все самые последние <br> новости о мероприятиях в <br>
+                        Экспофоруме.</p>
+                    <form action="" class="footer__form">
+                        <input type="email" name="email" placeholder="Введите ваш e-mail" class="footer__email">
+                        <input type="image" src="./images/footer/Vector.svg" class="footer__submit">
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
     </footer>
+    
 </body>
 
 </html>
